@@ -1,0 +1,290 @@
+$base:rgb(0, 22, 54);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+    background-color: rgb(0, 22, 54) !important;
+     background: url(..//fotos/_3e0c8a24-0b1b-4138-98d0-9cc619ef6680.jpg); 
+    background-position: center;
+    background-size: cover;
+    
+    height: 120vh;
+}
+
+
+
+
+// contato
+
+#exampleModal {
+    backdrop-filter: blur(3px);   
+
+             // color do BG 
+& .modal-content {
+   background-color: rgba(0, 0, 0, 0.295);
+   backdrop-filter: blur(150px);
+
+
+    .modal-body {
+        p {
+            color: white;
+            font-size: 16px;
+            gap: 0 10px !important;
+            a {
+                text-decoration: none !important;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+}
+    & h1 {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+    }
+
+    
+
+    & .btn-close {
+        background-color: rgb(255, 0, 0);
+    }
+
+    //botões
+    & .modal-footer {
+        & .btn {
+            margin: 0px 5px;
+            background-color: #00bbe0;
+            background-image: linear-gradient(115deg, #00bbe0 0%, #30b3a2 100%);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            border-radius: 20px;
+            padding: 2px 10px !important;
+            transition: 400ms !important;
+            &:hover {
+                transform: scale(1.04) !important;
+                box-shadow: 0 0 10px #00D1FF;
+            }
+        }
+    }
+}
+.btn-center2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    a {
+        display: flex;
+        justify-content: center;
+        color:  white;
+        background-color: #00456d;
+        border-radius: 50px;
+        padding: 20px;
+        text-decoration: none;
+        align-content: center;
+        font-size: 30px;
+
+    }
+}
+
+
+// navbar
+.navbar {
+
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.158) !important;
+    border-radius: 0 0 20px 20px;
+    z-index: 999 !important;
+
+    // navbar menu
+    & .navbar-toggler {
+        background-color: #00456d !important;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        z-index: 99999;
+    }
+
+    // navbar links A
+    & .nav-link {
+        color: white !important;
+        font-size: 14px;
+        font-weight:500;
+
+    }
+
+    // navbar login
+    & .collapse {
+
+        // botão
+        & .btn {
+            background-color: #d66f00;
+            background-image: linear-gradient(135deg, #ca6800 0%, #dfa000 100%);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+            // ajuste
+            margin-left: 10px;
+            transition: 300ms !important;
+
+            &:hover {
+                transform: scale(1.04) !important;
+                box-shadow: 0 0 10px rgb(116, 75, 0);
+            }
+        }
+    }
+}
+
+// navbar dropdown
+.dropdown-menu {
+    background-color: rgb(0, 22, 54) !important;
+    z-index: 99999 !important;
+
+    & .dropdown-item {
+        color: white !important;
+        font-size: 14px;
+        font-weight: 600;
+        z-index: 99999 !important;
+
+        &:hover {
+            background-color: #007566;
+            border-radius: 20px;
+            color: rgb(255, 255, 255) !important;
+        }
+    }
+}
+#main  {
+    background-color: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(20px);
+    border:  2px solid white;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    .card-flex {
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        .card-block {
+            width: 90%;
+            background-color: #00313b;
+            border-radius: 20px;
+            margin: 10px auto;
+            .nome {
+                margin-left: 10%;
+            }
+                    .descricao {
+                        text-align: center;
+                    }
+            .btn-center {
+                display: flex;
+                justify-content: center;
+                margin:20px;
+                a {
+                    display: flex;
+                    justify-content: center ;
+
+                }
+            }
+        }
+    }
+}
+@media (min-width:500px) {
+    #main {
+        .card-flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .card-block {
+                width: 40%;
+                background-color: #00313b;
+                border-radius: 20px;
+                margin: 10px;
+                .nome {
+                    margin-left: 10%;
+                }
+                        .descricao {
+                            text-align: center;
+                        }
+                .btn-center {
+                    display: flex;
+                    justify-content: center;
+                    margin:20px;
+                    a {
+                        display: flex;
+                        justify-content: center ;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:990px) {
+    #main {
+        width: 1000px;
+        margin: auto;
+
+        .card-flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .card-block {
+                width: 30%;
+                background-color: #00313b;
+                border-radius: 20px;
+                margin: 10px;
+                .nome {
+                    margin-left: 10%;
+                }
+                        .descricao {
+                            text-align: center;
+                        }
+                .btn-center {
+                    display: flex;
+                    justify-content: center;
+                    margin:20px;
+                    a {
+                        display: flex;
+                        justify-content: center ;
+    
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-center2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        a {
+            display: flex;
+            justify-content: center;
+            color:  white;
+            background-color: #00456d;
+            border-radius: 50px;
+            padding: 20px;
+            text-decoration: none;
+            align-content: center;
+            font-size: 30px;
+            background-color: #00bbe0;
+            background-image: linear-gradient(115deg, #00bbe0 0%, #30b3a2 100%);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+           
+            transition: 400ms !important;
+            &:hover {
+                transform: scale(1.1) !important;
+                box-shadow: 0 0 20px #00D1FF;
+            }
+
+        }
+    }
+    
+}
