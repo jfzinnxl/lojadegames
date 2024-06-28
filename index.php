@@ -60,7 +60,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
+            <form action="https://formsubmit.co/your@email.com" method="POST">
                 <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">Nome Completo</label>
                     <input type="email" name="nome" id="email" class="form-control"
@@ -71,6 +71,15 @@
                     <textarea class="form-control" id="message-text" rows="6"
                         placeholder="Digite sua mensagem"></textarea>
                 </div>
+                <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn" data-bs-dismiss="modal">Enviar</button>
+        </div>
+
+        <input type="text" name="name" required>
+     <input type="email" name="email" required>
+
+
             </form>
         </div>
         <div class="modal-footer">
